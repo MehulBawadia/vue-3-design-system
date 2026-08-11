@@ -46,6 +46,10 @@
     --ds-info-hover: var(--color-blue-700);
     --ds-info-active: var(--color-blue-800);
     --ds-on-info: var(--color-white);
+
+    --ds-shadow-surface: 0 1px 3px 0 rgb(15 23 42 / 0.08), 0 1px 2px -1px rgb(15 23 42 / 0.08);
+    --ds-shadow-float: 0 10px 15px -3px rgb(15 23 42 / 0.12), 0 4px 6px -4px rgb(15 23 42 / 0.12);
+    --ds-shadow-modal: 0 20px 25px -5px rgb(15 23 42 / 0.15), 0 8px 10px -6px rgb(15 23 42 / 0.15);
 }
 
 [data-theme="dark"] {
@@ -89,6 +93,12 @@
     --ds-info-hover: var(--color-blue-400);
     --ds-info-active: var(--color-blue-300);
     --ds-on-info: var(--color-white);
+
+    --ds-shadow-surface: 0 1px 3px 0 rgb(148 163 184 / 0.12), 0 1px 2px -1px rgb(99 102 241 / 0.1);
+    --ds-shadow-float:
+        0 10px 20px -5px rgb(99 102 241 / 0.18), 0 4px 8px -4px rgb(148 163 184 / 0.14);
+    --ds-shadow-modal:
+        0 20px 30px -8px rgb(99 102 241 / 0.25), 0 8px 12px -6px rgb(148 163 184 / 0.18);
 }
 
 @theme inline {
@@ -119,6 +129,10 @@
     --color-info-active: var(--ds-info-active);
 
     --color-border: var(--ds-border);
+
+    --shadow-surface: var(--ds-shadow-surface);
+    --shadow-float: var(--ds-shadow-float);
+    --shadow-modal: var(--ds-shadow-modal);
 }
 
 @layer base {
