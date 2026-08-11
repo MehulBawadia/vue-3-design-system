@@ -14,13 +14,13 @@ function toggleTheme() {
     <main class="min-h-screen bg-page px-6 py-10 text-page">
         <div class="mx-auto max-w-5xl">
             <header>
-                <p class="text-sm font-medium text-primary">SPACING</p>
+                <p class="text-sm font-medium text-primary">BORDER RADIUS</p>
 
-                <h1 class="mt-2 text-4xl font-bold tracking-tight">Spacing System</h1>
+                <h1 class="mt-2 text-4xl font-bold tracking-tight">Border Radius</h1>
 
                 <p class="mt-3 max-w-2xl text-base text-muted">
-                    Our spacing system uses Tailwind CSS's existing spacing scale with consistent
-                    conventions across components and layouts.
+                    A small and consistent radius system for controls, containers, badges, and other
+                    interface elements.
                 </p>
 
                 <div class="mt-6">
@@ -35,153 +35,175 @@ function toggleTheme() {
             </header>
 
             <section class="mt-10 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Base Spacing</h2>
+                <h2 class="text-xl font-semibold">Radius Scale</h2>
 
-                <div class="mt-6 space-y-4">
-                    <div class="flex items-center gap-4">
-                        <span class="w-16 text-sm text-muted"> 4px </span>
-
-                        <div class="h-4 w-1 bg-primary"></div>
-
-                        <code class="text-sm text-muted"> gap-1 / p-1 </code>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <span class="w-16 text-sm text-muted"> 8px </span>
-
-                        <div class="h-4 w-2 bg-primary"></div>
-
-                        <code class="text-sm text-muted"> gap-2 / p-2 </code>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <span class="w-16 text-sm text-muted"> 12px </span>
-
-                        <div class="h-4 w-3 bg-primary"></div>
-
-                        <code class="text-sm text-muted"> gap-3 / p-3 </code>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <span class="w-16 text-sm text-muted"> 16px </span>
-
-                        <div class="h-4 w-4 bg-primary"></div>
-
-                        <code class="text-sm text-muted"> gap-4 / p-4 </code>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <span class="w-16 text-sm text-muted"> 24px </span>
-
-                        <div class="h-4 w-6 bg-primary"></div>
-
-                        <code class="text-sm text-muted"> gap-6 / p-6 </code>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <span class="w-16 text-sm text-muted"> 32px </span>
-
-                        <div class="h-4 w-8 bg-primary"></div>
-
-                        <code class="text-sm text-muted"> gap-8 / p-8 </code>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mt-6 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Component Spacing</h2>
-
-                <div class="mt-6 grid gap-6 md:grid-cols-3">
-                    <div class="rounded-lg border border-border p-4">
-                        <p class="text-sm font-medium">Tight</p>
-
-                        <div class="mt-4 flex items-center gap-2">
-                            <div class="h-8 w-8 rounded bg-primary"></div>
-
-                            <span class="text-sm text-muted"> gap-2 </span>
-                        </div>
-                    </div>
-
-                    <div class="rounded-lg border border-border p-4">
-                        <p class="text-sm font-medium">Default</p>
-
-                        <div class="mt-4 flex items-center gap-4">
-                            <div class="h-8 w-8 rounded bg-primary"></div>
-
-                            <span class="text-sm text-muted"> gap-4 </span>
-                        </div>
-                    </div>
-
-                    <div class="rounded-lg border border-border p-4">
-                        <p class="text-sm font-medium">Spacious</p>
-
-                        <div class="mt-4 flex items-center gap-6">
-                            <div class="h-8 w-8 rounded bg-primary"></div>
-
-                            <span class="text-sm text-muted"> gap-6 </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mt-6 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Card Padding</h2>
-
-                <div class="mt-6 grid gap-6 md:grid-cols-3">
-                    <div class="rounded-lg border border-border p-4">
-                        <p class="text-sm font-medium">Compact</p>
-
-                        <p class="mt-2 text-sm text-muted">p-4 — 16px</p>
-                    </div>
-
-                    <div class="rounded-lg border border-border p-6">
-                        <p class="text-sm font-medium">Default</p>
-
-                        <p class="mt-2 text-sm text-muted">p-6 — 24px</p>
-                    </div>
-
-                    <div class="rounded-lg border border-border p-8">
-                        <p class="text-sm font-medium">Spacious</p>
-
-                        <p class="mt-2 text-sm text-muted">p-8 — 32px</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mt-6 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Form Spacing Example</h2>
-
-                <div class="mt-6 max-w-md space-y-6">
+                <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     <div>
-                        <label class="text-sm font-medium"> Email address </label>
+                        <div
+                            class="flex h-32 items-center justify-center rounded-sm border-2 border-primary bg-primary/5"
+                        >
+                            <span class="text-sm font-medium"> rounded-sm </span>
+                        </div>
 
-                        <input
-                            type="email"
-                            placeholder="you@example.com"
-                            class="mt-2 block w-full rounded-md border border-border bg-surface px-3 py-2 text-sm outline-none focus:border-primary"
-                        />
+                        <p class="mt-3 text-sm font-medium">Small</p>
 
-                        <p class="mt-2 text-sm text-muted">We'll never share your email address.</p>
+                        <p class="mt-1 text-xs text-muted">2px</p>
                     </div>
 
                     <div>
-                        <label class="text-sm font-medium"> Password </label>
+                        <div
+                            class="flex h-32 items-center justify-center rounded-md border-2 border-primary bg-primary/5"
+                        >
+                            <span class="text-sm font-medium"> rounded-md </span>
+                        </div>
 
-                        <input
-                            type="password"
-                            placeholder="••••••••"
-                            class="mt-2 block w-full rounded-md border border-border bg-surface px-3 py-2 text-sm outline-none focus:border-primary"
-                        />
+                        <p class="mt-3 text-sm font-medium">Default</p>
 
-                        <p class="mt-2 text-sm text-muted">Use at least 8 characters.</p>
+                        <p class="mt-1 text-xs text-muted">6px</p>
                     </div>
 
-                    <button
-                        type="button"
-                        class="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary hover:bg-primary-hover active:bg-primary-active"
-                    >
-                        Continue
-                    </button>
+                    <div>
+                        <div
+                            class="flex h-32 items-center justify-center rounded-lg border-2 border-primary bg-primary/5"
+                        >
+                            <span class="text-sm font-medium"> rounded-lg </span>
+                        </div>
+
+                        <p class="mt-3 text-sm font-medium">Large</p>
+
+                        <p class="mt-1 text-xs text-muted">8px</p>
+                    </div>
+
+                    <div>
+                        <div
+                            class="flex h-32 items-center justify-center rounded-xl border-2 border-primary bg-primary/5"
+                        >
+                            <span class="text-sm font-medium"> rounded-xl </span>
+                        </div>
+
+                        <p class="mt-3 text-sm font-medium">Extra Large</p>
+
+                        <p class="mt-1 text-xs text-muted">12px</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-6 rounded-xl border border-border bg-surface p-6">
+                <h2 class="text-xl font-semibold">Component Examples</h2>
+
+                <div class="mt-6 space-y-8">
+                    <div>
+                        <p class="text-sm font-medium">Buttons</p>
+
+                        <div class="mt-3 flex flex-wrap gap-3">
+                            <button
+                                type="button"
+                                class="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-on-primary"
+                            >
+                                Small Radius
+                            </button>
+
+                            <button
+                                type="button"
+                                class="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary"
+                            >
+                                Default Radius
+                            </button>
+
+                            <button
+                                type="button"
+                                class="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-on-primary"
+                            >
+                                Large Radius
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium">Cards</p>
+
+                        <div class="mt-3 grid gap-4 md:grid-cols-2">
+                            <div class="rounded-lg border border-border p-5">
+                                <p class="font-medium">Default Card</p>
+
+                                <p class="mt-2 text-sm text-muted">Cards use rounded-lg.</p>
+                            </div>
+
+                            <div class="rounded-xl border border-border p-5">
+                                <p class="font-medium">Prominent Card</p>
+
+                                <p class="mt-2 text-sm text-muted">
+                                    Larger containers can use rounded-xl.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-sm font-medium">Pills</p>
+
+                        <div class="mt-3 flex flex-wrap gap-3">
+                            <span
+                                class="rounded-full bg-primary px-3 py-1 text-xs font-medium text-on-primary"
+                            >
+                                Primary
+                            </span>
+
+                            <span
+                                class="rounded-full bg-success px-3 py-1 text-xs font-medium text-on-success"
+                            >
+                                Active
+                            </span>
+
+                            <span
+                                class="rounded-full bg-danger px-3 py-1 text-xs font-medium text-on-danger"
+                            >
+                                Error
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-6 rounded-xl border border-border bg-surface p-6">
+                <h2 class="text-xl font-semibold">Recommended Usage</h2>
+
+                <div class="mt-6 overflow-hidden rounded-lg border border-border">
+                    <div class="grid grid-cols-3 bg-muted px-4 py-3 text-sm font-medium">
+                        <span>Element</span>
+                        <span>Radius</span>
+                        <span>Utility</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-t border-border px-4 py-3 text-sm">
+                        <span>Input</span>
+                        <span>Default</span>
+                        <code class="text-muted">rounded-md</code>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-t border-border px-4 py-3 text-sm">
+                        <span>Button</span>
+                        <span>Default</span>
+                        <code class="text-muted">rounded-md</code>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-t border-border px-4 py-3 text-sm">
+                        <span>Card</span>
+                        <span>Large</span>
+                        <code class="text-muted">rounded-lg</code>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-t border-border px-4 py-3 text-sm">
+                        <span>Dialog</span>
+                        <span>Extra Large</span>
+                        <code class="text-muted">rounded-xl</code>
+                    </div>
+
+                    <div class="grid grid-cols-3 border-t border-border px-4 py-3 text-sm">
+                        <span>Badge</span>
+                        <span>Pill</span>
+                        <code class="text-muted">rounded-full</code>
+                    </div>
                 </div>
             </section>
         </div>
