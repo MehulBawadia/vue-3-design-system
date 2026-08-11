@@ -1,0 +1,161 @@
+:root {
+    --ds-page-bg: var(--color-slate-100);
+    --ds-page-text: var(--color-slate-900);
+
+    --ds-surface-bg: var(--color-white);
+    --ds-surface-text: var(--color-slate-900);
+
+    --ds-muted-bg: var(--color-slate-100);
+    --ds-muted-text: var(--color-slate-500);
+
+    --ds-border: var(--color-slate-200);
+
+    --ds-primary: var(--color-indigo-600);
+    --ds-primary-hover: var(--color-indigo-700);
+    --ds-primary-active: var(--color-indigo-800);
+    --ds-on-primary: var(--color-white);
+
+    --ds-secondary: var(--color-slate-200);
+    --ds-secondary-hover: var(--color-slate-300);
+    --ds-secondary-active: var(--color-slate-400);
+    --ds-on-secondary: var(--color-slate-900);
+
+    --ds-success: var(--color-green-600);
+    --ds-success-hover: var(--color-green-700);
+    --ds-success-active: var(--color-green-800);
+    --ds-on-success: var(--color-white);
+
+    --ds-warning: var(--color-amber-500);
+    --ds-warning-hover: var(--color-amber-600);
+    --ds-warning-active: var(--color-amber-700);
+    --ds-on-warning: var(--color-white);
+
+    --ds-danger: var(--color-red-600);
+    --ds-danger-hover: var(--color-red-700);
+    --ds-danger-active: var(--color-red-800);
+    --ds-on-danger: var(--color-white);
+
+    --ds-info: var(--color-blue-600);
+    --ds-info-hover: var(--color-blue-700);
+    --ds-info-active: var(--color-blue-800);
+    --ds-on-info: var(--color-white);
+}
+
+[data-theme="dark"] {
+    --ds-page-bg: var(--color-slate-950);
+    --ds-page-text: var(--color-slate-100);
+
+    --ds-surface-bg: var(--color-slate-900);
+    --ds-surface-text: var(--color-slate-100);
+
+    --ds-muted-bg: var(--color-slate-800);
+    --ds-muted-text: var(--color-slate-400);
+
+    --ds-border: var(--color-slate-700);
+
+    --ds-primary: var(--color-indigo-500);
+    --ds-primary-hover: var(--color-indigo-400);
+    --ds-primary-active: var(--color-indigo-300);
+    --ds-on-primary: var(--color-white);
+
+    --ds-secondary: var(--color-slate-700);
+    --ds-secondary-hover: var(--color-slate-600);
+    --ds-secondary-active: var(--color-slate-500);
+    --ds-on-secondary: var(--color-slate-100);
+
+    --ds-success: var(--color-green-500);
+    --ds-success-hover: var(--color-green-400);
+    --ds-success-active: var(--color-green-300);
+    --ds-on-success: var(--color-white);
+
+    --ds-warning: var(--color-amber-400);
+    --ds-warning-hover: var(--color-amber-300);
+    --ds-warning-active: var(--color-amber-200);
+    --ds-on-warning: var(--color-white);
+
+    --ds-danger: var(--color-red-500);
+    --ds-danger-hover: var(--color-red-400);
+    --ds-danger-active: var(--color-red-300);
+    --ds-on-danger: var(--color-white);
+
+    --ds-info: var(--color-blue-500);
+    --ds-info-hover: var(--color-blue-400);
+    --ds-info-active: var(--color-blue-300);
+    --ds-on-info: var(--color-white);
+}
+
+@theme inline {
+    --color-primary: var(--ds-primary);
+    --color-primary-hover: var(--ds-primary-hover);
+    --color-primary-active: var(--ds-primary-active);
+
+    --color-secondary: var(--ds-secondary);
+    --color-secondary-hover: var(--ds-secondary-hover);
+    --color-secondary-active: var(--ds-secondary-active);
+
+    --color-success: var(--ds-success);
+    --color-success-hover: var(--ds-success-hover);
+    --color-success-active: var(--ds-success-active);
+
+    --color-warning: var(--ds-warning);
+    --color-warning-hover: var(--ds-warning-hover);
+    --color-warning-active: var(--ds-warning-active);
+
+    --color-danger: var(--ds-danger);
+    --color-danger-hover: var(--ds-danger-hover);
+    --color-danger-active: var(--ds-danger-active);
+
+    --color-info: var(--ds-info);
+    --color-info-hover: var(--ds-info-hover);
+    --color-info-active: var(--ds-info-active);
+
+    --color-border: var(--ds-border);
+}
+
+@utility bg-page {
+    background-color: var(--ds-page-bg);
+}
+
+@utility text-page {
+    color: var(--ds-page-text);
+}
+
+@utility bg-surface {
+    background-color: var(--ds-surface-bg);
+}
+
+@utility text-surface {
+    color: var(--ds-surface-text);
+}
+
+@utility bg-muted {
+    background-color: var(--ds-muted-bg);
+}
+
+@utility text-muted {
+    color: var(--ds-muted-text);
+}
+
+@utility text-on-primary {
+    color: var(--ds-on-primary);
+}
+
+@utility text-on-secondary {
+    color: var(--ds-on-secondary);
+}
+
+@utility text-on-success {
+    color: var(--ds-on-success);
+}
+
+@utility text-on-warning {
+    color: var(--ds-on-warning);
+}
+
+@utility text-on-danger {
+    color: var(--ds-on-danger);
+}
+
+@utility text-on-info {
+    color: var(--ds-on-info);
+}
