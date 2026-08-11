@@ -14,9 +14,14 @@ function toggleTheme() {
     <main class="min-h-screen bg-page px-6 py-10 text-page">
         <div class="mx-auto max-w-5xl">
             <header>
-                <h1 class="text-3xl font-bold">Vue 3 Design System</h1>
+                <p class="text-sm font-medium text-primary">TYPOGRAPHY</p>
 
-                <p class="mt-2 text-muted">Semantic color token verification.</p>
+                <h1 class="mt-2 text-4xl font-bold tracking-tight">Design System Typography</h1>
+
+                <p class="mt-3 max-w-2xl text-base text-muted">
+                    A simple and consistent typography system built on top of Tailwind CSS and
+                    Inter.
+                </p>
 
                 <div class="mt-6">
                     <button
@@ -29,99 +34,119 @@ function toggleTheme() {
                 </div>
             </header>
 
-            <section class="mt-8 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Primary & Secondary</h2>
+            <!-- Headings -->
 
-                <div class="mt-6 flex flex-wrap gap-3">
-                    <button
-                        type="button"
-                        class="rounded-md bg-primary px-4 py-2 font-medium text-on-primary hover:bg-primary-hover active:bg-primary-active"
-                    >
-                        Primary
-                    </button>
+            <section class="mt-10 rounded-xl border border-border bg-surface p-6">
+                <h2 class="text-xl font-semibold text-surface">Headings</h2>
 
-                    <button
-                        type="button"
-                        class="rounded-md bg-secondary px-4 py-2 font-medium text-on-secondary hover:bg-secondary-hover active:bg-secondary-active"
-                    >
-                        Secondary
-                    </button>
+                <div class="mt-6 space-y-6">
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-4xl / font-bold</p>
+
+                        <h1 class="text-4xl font-bold tracking-tight">Heading One</h1>
+                    </div>
+
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-3xl / font-bold</p>
+
+                        <h2 class="text-3xl font-bold tracking-tight">Heading Two</h2>
+                    </div>
+
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-2xl / font-semibold</p>
+
+                        <h3 class="text-2xl font-semibold">Heading Three</h3>
+                    </div>
+
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-xl / font-semibold</p>
+
+                        <h4 class="text-xl font-semibold">Heading Four</h4>
+                    </div>
+
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-lg / font-semibold</p>
+
+                        <h5 class="text-lg font-semibold">Heading Five</h5>
+                    </div>
                 </div>
             </section>
+
+            <!-- Body -->
 
             <section class="mt-6 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Status Colors</h2>
+                <h2 class="text-xl font-semibold text-surface">Body Text</h2>
 
-                <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <button
-                        type="button"
-                        class="rounded-md bg-success px-4 py-3 font-medium text-on-success hover:bg-success-hover active:bg-success-active"
-                    >
-                        Success
-                    </button>
+                <div class="mt-6 space-y-6">
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-base</p>
 
-                    <button
-                        type="button"
-                        class="rounded-md bg-warning px-4 py-3 font-medium text-on-warning hover:bg-warning-hover active:bg-warning-active"
-                    >
-                        Warning
-                    </button>
+                        <p class="text-base">
+                            This is the default body text used throughout the application. It should
+                            be comfortable to read and work well for paragraphs and general content.
+                        </p>
+                    </div>
 
-                    <button
-                        type="button"
-                        class="rounded-md bg-danger px-4 py-3 font-medium text-on-danger hover:bg-danger-hover active:bg-danger-active"
-                    >
-                        Danger
-                    </button>
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-sm</p>
 
-                    <button
-                        type="button"
-                        class="rounded-md bg-info px-4 py-3 font-medium text-on-info hover:bg-info-hover active:bg-info-active"
-                    >
-                        Info
-                    </button>
+                        <p class="text-sm">
+                            This is secondary body text. It can be used for supporting information,
+                            descriptions, and metadata.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="mb-1 text-xs text-muted">text-xs</p>
+
+                        <p class="text-xs">
+                            This is small supporting text, generally used for captions and
+                            supplementary information.
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <section class="mt-6 grid gap-6 md:grid-cols-2">
-                <div class="rounded-xl border border-border bg-surface p-6">
-                    <h2 class="text-xl font-semibold text-surface">Surface</h2>
-
-                    <p class="mt-2 text-muted">This card uses bg-surface and text-surface.</p>
-
-                    <p class="mt-4 text-primary">This is text-primary.</p>
-                </div>
-
-                <div class="rounded-xl border border-border bg-muted p-6">
-                    <h2 class="text-xl font-semibold text-page">Muted</h2>
-
-                    <p class="mt-2 text-muted">This section uses bg-muted and text-muted.</p>
-                </div>
-            </section>
+            <!-- Weights -->
 
             <section class="mt-6 rounded-xl border border-border bg-surface p-6">
-                <h2 class="text-xl font-semibold text-surface">Border</h2>
+                <h2 class="text-xl font-semibold text-surface">Font Weights</h2>
 
-                <p class="mt-2 text-muted">The cards and sections use border-border.</p>
+                <div class="mt-6 space-y-4">
+                    <p class="font-normal">400 — Normal</p>
 
-                <div class="mt-6 grid gap-4 sm:grid-cols-3">
-                    <div class="rounded-lg border border-border p-4">
-                        <span class="text-sm text-muted"> Border </span>
+                    <p class="font-medium">500 — Medium</p>
 
-                        <p class="mt-1 font-medium text-surface">Default border</p>
+                    <p class="font-semibold">600 — Semibold</p>
+
+                    <p class="font-bold">700 — Bold</p>
+                </div>
+            </section>
+
+            <!-- UI Examples -->
+
+            <section class="mt-6 rounded-xl border border-border bg-surface p-6">
+                <h2 class="text-xl font-semibold text-surface">UI Examples</h2>
+
+                <div class="mt-6 space-y-6">
+                    <div>
+                        <label class="text-sm font-medium"> Email address </label>
+
+                        <p class="mt-1 text-sm text-muted">We'll never share your email address.</p>
                     </div>
 
-                    <div class="rounded-lg border border-primary bg-primary/5 p-4">
-                        <span class="text-sm text-primary"> Primary </span>
+                    <div>
+                        <p class="text-sm font-medium">Account Status</p>
 
-                        <p class="mt-1 font-medium text-surface">Primary border</p>
+                        <p class="mt-1 text-sm text-success">Your account is active.</p>
                     </div>
 
-                    <div class="rounded-lg border border-danger bg-danger/5 p-4">
-                        <span class="text-sm text-danger"> Danger </span>
-
-                        <p class="mt-1 font-medium text-surface">Danger border</p>
-                    </div>
+                    <button
+                        type="button"
+                        class="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary hover:bg-primary-hover active:bg-primary-active"
+                    >
+                        Continue
+                    </button>
                 </div>
             </section>
         </div>
