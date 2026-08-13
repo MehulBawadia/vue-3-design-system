@@ -42,6 +42,13 @@
                                 >
                                     Spacing
                                 </RouterLink>
+
+                                <RouterLink
+                                    to="/border-radius"
+                                    class="block rounded-md px-2 py-2 text-sm font-medium hover:bg-muted"
+                                >
+                                    Border Radius
+                                </RouterLink>
                             </div>
                         </div>
                     </nav>
