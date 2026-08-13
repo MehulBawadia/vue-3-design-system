@@ -16,6 +16,11 @@ const routes = [
                 name: "design-system.colors",
                 component: () => import("@/pages/ColorsPage.vue"),
             },
+            {
+                path: "typography",
+                name: "design-system.typography",
+                component: () => import("@/pages/TypographyPage.vue"),
+            },
         ],
     },
 ];
