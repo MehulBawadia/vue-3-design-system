@@ -21,6 +21,11 @@ const routes = [
                 name: "design-system.typography",
                 component: () => import("@/pages/TypographyPage.vue"),
             },
+            {
+                path: "spacing",
+                name: "design-system.spacing",
+                component: () => import("@/pages/SpacingPage.vue"),
+            },
         ],
     },
 ];

@@ -35,6 +35,13 @@
                                 >
                                     Typography
                                 </RouterLink>
+
+                                <RouterLink
+                                    to="/spacing"
+                                    class="block rounded-md px-2 py-2 text-sm font-medium hover:bg-muted"
+                                >
+                                    Spacing
+                                </RouterLink>
                             </div>
                         </div>
                     </nav>
