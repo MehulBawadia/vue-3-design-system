@@ -26,6 +26,11 @@ const routes = [
                 name: "design-system.spacing",
                 component: () => import("@/pages/SpacingPage.vue"),
             },
+            {
+                path: "border-radius",
+                name: "design-system.borderRadius",
+                component: () => import("@/pages/BorderRadiusPage.vue"),
+            },
         ],
     },
 ];
