@@ -49,6 +49,13 @@
                                 >
                                     Border Radius
                                 </RouterLink>
+
+                                <RouterLink
+                                    to="/shadows"
+                                    class="block rounded-md px-2 py-2 text-sm font-medium hover:bg-muted"
+                                >
+                                    Shadows
+                                </RouterLink>
                             </div>
                         </div>
                     </nav>
