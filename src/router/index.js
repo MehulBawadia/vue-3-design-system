@@ -31,6 +31,11 @@ const routes = [
                 name: "design-system.borderRadius",
                 component: () => import("@/pages/BorderRadiusPage.vue"),
             },
+            {
+                path: "shadows",
+                name: "design-system.shadows",
+                component: () => import("@/pages/ShadowsPage.vue"),
+            },
         ],
     },
 ];
